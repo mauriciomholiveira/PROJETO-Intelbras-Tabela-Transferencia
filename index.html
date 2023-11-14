@@ -26360,26 +26360,20 @@
 </body>
 <script>
 document.getElementById('busca').addEventListener('input', function() {
-  let filtro = this.value.toLowerCase();
-  let linhas = document.querySelectorAll('#tabela tbody tr');
+  var textoBusca = this.value.toLowerCase(); // Obtém o texto digitado e converte para minúsculas
 
-  linhas.forEach(function(linha) {
-    let colunas = linha.getElementsByTagName('td');
-    let mostrarLinha = false;
-
-    Array.from(colunas).forEach(function(coluna) {
-      if (coluna.textContent.toLowerCase().indexOf(filtro) > -1) {
-        mostrarLinha = true;
-      }
-    });
-
-    if (mostrarLinha) {
-      linha.style.display = '';
+  var linhasTabela = document.getElementById('tabela').getElementsByTagName('tr');
+  
+  for (var i = 0; i < linhasTabela.length; i++) {
+    var textoLinha = linhasTabela[i].innerText.toLowerCase(); // Obtém o texto da linha e converte para minúsculas
+    if (textoLinha.includes(textoBusca)) {
+      linhasTabela[i].style.display = 'table-row'; // Exibe a linha se o texto for encontrado
     } else {
-      linha.style.display = 'none';
+      linhasTabela[i].style.display = 'none'; // Oculta a linha se o texto não for encontrado
     }
-  });
+  }
 });
+
 </script>
 
 
