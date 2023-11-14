@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabela Transferência</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  
+  
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -53,10 +58,14 @@
 </header>
 
 <body>
-  <h2> Faça sua busca
-    <br>
-    <input type="text" id="busca" placeholder="Buscar...">
-  </h2>
+  <div class="col-xs-6">
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <span class="input-group-addon">
+        <button class="fa fa-search" style="background:transparent;border:none"></button>
+      </span>
+    </div>
+  </div>
   <div id="frontEndSearch">
     <table>
       <tbody>
