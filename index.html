@@ -26362,21 +26362,33 @@
 
   <script>
     document.getElementById('busca').addEventListener('input', function() {
-      var textoBusca = this.value.toLowerCase().trim(); // Obtém o texto digitado e converte para minúsculas
+      var termosBusca = this.value.toLowerCase().trim().split(' '); // Obtém os termos digitados e converte para minúsculas
 
       var linhasTabela = document.getElementById('tabela').getElementsByTagName('tr');
 
       for (var i = 1; i < linhasTabela.length; i++) {
         var celulasLinha = linhasTabela[i].getElementsByTagName('td'); // Acessa as células da linha
 
-        var linhaVisivel = false; // Define uma flag para verificar se a linha deve ser exibida
+        var linhaVisivel = true; // Define uma flag para verificar se a linha deve ser exibida
 
-        // Itera pelas células da linha para verificar se alguma contém o texto da busca
-        for (var j = 0; j < celulasLinha.length; j++) {
-          var textoCelula = celulasLinha[j].innerText.toLowerCase();
-          if (textoCelula.includes(textoBusca)) {
-            linhaVisivel = true; // Se o texto for encontrado em alguma célula, a linha é marcada como visível
-            break; // Sai do loop interno, já que encontrou uma correspondência
+        // Itera pelos termos de busca para verificar se todos estão presentes na linha
+        for (var k = 0; k < termosBusca.length; k++) {
+          var termoAtual = termosBusca[k];
+          var termoEncontrado = false; // Flag para verificar se o termo foi encontrado em alguma célula
+
+          // Itera pelas células da linha para verificar se o termo está presente em alguma delas
+          for (var j = 0; j < celulasLinha.length; j++) {
+            var textoCelula = celulasLinha[j].innerText.toLowerCase();
+            if (textoCelula.includes(termoAtual)) {
+              termoEncontrado = true;
+              break; // Sai do loop interno, já que encontrou uma correspondência
+            }
+          }
+
+          // Se o termo não foi encontrado em nenhuma célula, a linha não deve ser exibida
+          if (!termoEncontrado) {
+            linhaVisivel = false;
+            break; // Sai do loop externo, já que pelo menos um termo não foi encontrado
           }
         }
 
