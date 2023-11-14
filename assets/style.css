@@ -46,6 +46,7 @@ th {
 .submit-line {
   position: relative;
   width: 200px;
+  margin: 20px 78%;
 }
 
 .submit-line input {
