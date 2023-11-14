@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: small;
+}
+
+h1 {
+  border: solid 2px;
+  border-radius: 5px;
+  background-color: #04a94b;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 300px;
+  /* Evita que o texto seja quebrado */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.submit-lente {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.submit-line {
+  position: relative;
+  width: 200px;
+}
+
+.submit-line input {
+  width: 100%;
+}
