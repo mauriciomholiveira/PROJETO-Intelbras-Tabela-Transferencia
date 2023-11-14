@@ -26381,11 +26381,7 @@
         }
 
         // Exibe ou oculta a linha de acordo com a flag linhaVisivel
-        if (linhaVisivel) {
-          linhasTabela[i].style.display = '';
-        } else {
-          linhasTabela[i].style.display = 'none';
-        }
+        linhasTabela[i].style.display = linhaVisivel ? '' : 'none';
       }
     });
   </script>
