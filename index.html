@@ -26358,7 +26358,29 @@
     </tbody>
   </table>
 </body>
+<script>
+document.getElementById('busca').addEventListener('input', function() {
+  let filtro = this.value.toLowerCase();
+  let linhas = document.querySelectorAll('#tabela tbody tr');
 
+  linhas.forEach(function(linha) {
+    let colunas = linha.getElementsByTagName('td');
+    let mostrarLinha = false;
+
+    Array.from(colunas).forEach(function(coluna) {
+      if (coluna.textContent.toLowerCase().indexOf(filtro) > -1) {
+        mostrarLinha = true;
+      }
+    });
+
+    if (mostrarLinha) {
+      linha.style.display = '';
+    } else {
+      linha.style.display = 'none';
+    }
+  });
+});
+</script>
 
 
 </html>
