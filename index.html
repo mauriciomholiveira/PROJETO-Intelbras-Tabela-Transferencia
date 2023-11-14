@@ -26359,24 +26359,36 @@
       </tr>
     </tbody>
   </table>
-  
-  <script>
+
+<script>
   document.getElementById('busca').addEventListener('input', function() {
     var textoBusca = this.value.toLowerCase(); // Obtém o texto digitado e converte para minúsculas
-  
+
     var linhasTabela = document.getElementById('tabela').getElementsByTagName('tr');
-    
-    for (var i = 0; i < linhasTabela.length; i++) {
-      var textoLinha = linhasTabela[i].innerText.toLowerCase(); // Obtém o texto da linha e converte para minúsculas
-      if (textoLinha.includes(textoBusca)) {
-        linhasTabela[i].style.display = 'table-row'; // Exibe a linha se o texto for encontrado
+
+    for (var i = 1; i < linhasTabela.length; i++) {
+      var celulasLinha = linhasTabela[i].getElementsByTagName('td'); // Acessa as células da linha
+
+      var linhaVisivel = false; // Define uma flag para verificar se a linha deve ser exibida
+
+      // Itera pelas células da linha para verificar se alguma contém o texto da busca
+      for (var j = 0; j < celulasLinha.length; j++) {
+        var textoCelula = celulasLinha[j].innerText.toLowerCase();
+        if (textoCelula.includes(textoBusca)) {
+          linhaVisivel = true; // Se o texto for encontrado em alguma célula, a linha é marcada como visível
+          break; // Sai do loop interno, já que encontrou uma correspondência
+        }
+      }
+
+      // Exibe ou oculta a linha de acordo com a flag linhaVisivel
+      if (linhaVisivel) {
+        linhasTabela[i].style.display = 'table-row';
       } else {
-        linhasTabela[i].style.display = 'none'; // Oculta a linha se o texto não for encontrado
+        linhasTabela[i].style.display = 'none';
       }
     }
   });
-  
-  </script>
+</script>
 </body>
 
 
