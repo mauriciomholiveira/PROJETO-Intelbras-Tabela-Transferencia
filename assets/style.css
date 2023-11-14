@@ -19,6 +19,13 @@ table {
   margin: 20px auto;
 }
 
+thead {
+  font-weight: 800;
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
+}
+
 th,
 td {
   padding: 5px;
@@ -51,4 +58,40 @@ th {
 
 .submit-line input {
   width: 100%;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 414px) {
+  /* Largura máxima do iPhone 11 */
+  body {
+    font-size: smaller; /* Tamanho da fonte ajustado */
+  }
+
+  h1 {
+    font-size: 6vw;
+    /* Tamanho da fonte responsiva em relação à largura da viewport */
+    margin-bottom: 5vw; /* Margem inferior responsiva */
+  }
+
+  table {
+    width: 90%; /* Ajuste da largura da tabela */
+    margin: 10px auto; /* Margem responsiva */
+  }
+
+  th,
+  td {
+    padding: 2px; /* Espaçamento interno reduzido */
+    max-width: 80vw; /* Largura máxima relativa */
+  }
+
+  .submit-line {
+    width: 90%; /* Largura ajustada para o campo de entrada */
+    margin: 10px auto; /* Margem responsiva */
+    text-align: center; /* Centraliza o conteúdo interno */
+  }
+
+  .submit-line input {
+    width: 100%;
+    display: inline-block; /* Para centralizar o botão submit */
+  }
 }
