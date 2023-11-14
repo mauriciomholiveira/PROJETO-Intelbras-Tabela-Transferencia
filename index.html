@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabela Transferência</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <style>
     body {
@@ -26361,27 +26362,51 @@
   </table>
 
   <script>
-    document.getElementById('busca').addEventListener('input', function() {
-      var termoBusca = this.value.toLowerCase().trim(); // Obtém o termo digitado e converte para minúsculas
+    $(document).ready(function () {
+      // Seu conteúdo de tabela vai aqui (este é apenas um exemplo de tabela)
+      var conteudoTabela = `
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>João</td>
+            <td>joao@email.com</td>
+          </tr>
+          <tr>
+            <td>Maria</td>
+            <td>maria@email.com</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>carlos@email.com</td>
+          </tr>
+        </tbody>
+      `;
 
-      var linhasTabela = document.getElementById('tabela').getElementsByTagName('tr');
+      $('#tabela').html(conteudoTabela); // Insere o conteúdo na tabela
 
-      for (var i = 1; i < linhasTabela.length; i++) {
-        var celulasLinha = linhasTabela[i].getElementsByTagName('td'); // Acessa as células da linha
-        var linhaVisivel = false; // Define uma flag para verificar se a linha deve ser exibida
+      // Função de busca
+      $('#busca').on('input', function () {
+        var termoBusca = $(this).val().toLowerCase().trim(); // Obtém o termo de busca
 
-        // Itera pelas células da linha para verificar se alguma contém o termo de busca
-        for (var j = 0; j < celulasLinha.length; j++) {
-          var textoCelula = celulasLinha[j].textContent.toLowerCase();
-          if (textoCelula.includes(termoBusca)) {
-            linhaVisivel = true;
-            break; // Sai do loop interno se encontrar um correspondente
-          }
-        }
+        $('#tabela tbody tr').each(function () {
+          var linhaVisivel = false; // Flag para verificar se a linha deve ser exibida
 
-        // Exibe ou oculta a linha de acordo com a flag linhaVisivel
-        linhasTabela[i].style.display = linhaVisivel ? '' : 'none';
-      }
+          $(this).find('td').each(function () {
+            var textoCelula = $(this).text().toLowerCase();
+            if (textoCelula.includes(termoBusca)) {
+              linhaVisivel = true;
+              return false; // Sai do loop interno se encontrar um correspondente
+            }
+          });
+
+          $(this).toggle(linhaVisivel); // Exibe ou oculta a linha conforme a flag
+        });
+      });
     });
   </script>
 </body>
