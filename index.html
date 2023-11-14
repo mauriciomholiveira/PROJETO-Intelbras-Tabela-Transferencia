@@ -26359,24 +26359,25 @@
       </tr>
     </tbody>
   </table>
-</body>
-<script>
-document.getElementById('busca').addEventListener('input', function() {
-  var textoBusca = this.value.toLowerCase(); // Obtém o texto digitado e converte para minúsculas
-
-  var linhasTabela = document.getElementById('tabela').getElementsByTagName('tr');
   
-  for (var i = 0; i < linhasTabela.length; i++) {
-    var textoLinha = linhasTabela[i].innerText.toLowerCase(); // Obtém o texto da linha e converte para minúsculas
-    if (textoLinha.includes(textoBusca)) {
-      linhasTabela[i].style.display = 'table-row'; // Exibe a linha se o texto for encontrado
-    } else {
-      linhasTabela[i].style.display = 'none'; // Oculta a linha se o texto não for encontrado
+  <script>
+  document.getElementById('busca').addEventListener('input', function() {
+    var textoBusca = this.value.toLowerCase(); // Obtém o texto digitado e converte para minúsculas
+  
+    var linhasTabela = document.getElementById('tabela').getElementsByTagName('tr');
+    
+    for (var i = 0; i < linhasTabela.length; i++) {
+      var textoLinha = linhasTabela[i].innerText.toLowerCase(); // Obtém o texto da linha e converte para minúsculas
+      if (textoLinha.includes(textoBusca)) {
+        linhasTabela[i].style.display = 'table-row'; // Exibe a linha se o texto for encontrado
+      } else {
+        linhasTabela[i].style.display = 'none'; // Oculta a linha se o texto não for encontrado
+      }
     }
-  }
-});
-
-</script>
+  });
+  
+  </script>
+</body>
 
 
 </html>
