@@ -88,6 +88,10 @@ img {
     max-width: 80vw; /* Largura máxima relativa */
   }
 
+  img {
+    width: 22vw;
+  }
+  
   .submit-line {
     width: 90%; /* Largura ajustada para o campo de entrada */
     margin: 10px auto; /* Margem responsiva */
