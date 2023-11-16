@@ -69,11 +69,11 @@ img {
   /* Largura máxima do iPhone 11 */
   body {
     font-size: smaller; /* Tamanho da fonte ajustado */
+    background-color: white;
   }
 
   h1 {
-    font-size: 6vw;
-    /* Tamanho da fonte responsiva em relação à largura da viewport */
+    font-size: 6vw; /* Tamanho da fonte responsiva em relação à largura da viewport */
     margin-bottom: 5vw; /* Margem inferior responsiva */
   }
 
