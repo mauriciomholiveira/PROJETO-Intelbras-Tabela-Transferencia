@@ -1,4 +1,5 @@
 # Tabela de Transferências Intelbras 🔄
+# Version 1.2
 
 Este arquivo README.md contém informações sobre a tabela de transferências da Intelbras, estruturada com os campos de Segmento, Fila, URA, Produto, Suporte, Qualificação ICC e Transferência CHAT.
 
