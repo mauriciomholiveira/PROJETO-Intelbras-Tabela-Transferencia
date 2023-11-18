@@ -1,0 +1,50 @@
+
+<--  CSS NAO USADO MOBILE -->
+
+    /* Estilos para dispositivos móveis */
+    @media only screen and (max-width: 450px) {
+      /* Largura máxima do iPhone 11 */
+      body {
+        font-size: smaller; /* Tamanho da fonte ajustado */
+        background-color: white;
+      }
+
+      h1 {
+        font-size: 5vw;
+        /* Tamanho da fonte responsiva em relação à largura da viewport */
+        margin-bottom: 5vw; /* Margem inferior responsiva */
+        max-width: 82vw;
+        padding: 5px;
+      
+      }
+
+      table {
+        width: 90%; /* Ajuste da largura da tabela */
+        margin: 10px auto; /* Margem responsiva */
+      }
+
+      th,
+      td {
+        padding: 8px; /* Espaçamento interno reduzido */
+        max-width: 40vw; /* Largura máxima relativa */
+      }
+      /* Estilizando linhas pares */
+      tr:nth-child(even) {
+        background-color: #ddd; /* Cor para linhas pares */
+      }
+
+      img {
+        width: 22vw;
+      }
+
+      .submit-line {
+        width: 60%; /* Largura ajustada para o campo de entrada */
+        margin: 10px 65px; /* Margem responsiva */
+        text-align: center; /* Centraliza o conteúdo interno */
+      }
+
+      .submit-line input {
+        width: 100%;
+        display: inline-block; /* Para centralizar o botão submit */
+      }
+    }
