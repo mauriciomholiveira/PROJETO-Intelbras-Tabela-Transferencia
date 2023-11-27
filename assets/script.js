@@ -2,7 +2,7 @@ $(document).ready(function () {
   function search(separador) {
     $("#busca").keyup(function () {
       var index = $(this).index();
-      var nth = "#frontEndSearch tbody td:nth-child(2)"; // Mude para o índice da coluna do Produto
+      var nth = "#frontEndSearch tbody td:nth-child(3)"; // Mude para o índice da coluna do Produto
       var valor = $(this).val().toUpperCase();
       var palavras = $.trim(valor).replace(new RegExp((separador + '+'), 'g'), separador).split(separador);
       $("#frontEndSearch tbody tr").show();
