@@ -19,8 +19,4 @@ $(document).ready(function () {
   }
 
   search(' ');
-
-  $("#busca").blur(function () {
-    $(this).val("");
-  });
 });
