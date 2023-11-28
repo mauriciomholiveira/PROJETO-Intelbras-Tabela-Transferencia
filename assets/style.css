@@ -1,3 +1,4 @@
+/* Reset e Estilos Globais */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@ body {
   font-size: small;
 }
 
-
+/* Estilos de Cabeçalho */
 h1 {
   border: solid 2px;
   border-radius: 10px;
@@ -17,11 +18,12 @@ h1 {
   color: #ffffff;
   text-align: center;
   margin-bottom: 6px;
-  margin-top: px;
   font-size: 36px;
   height: 50px;
+  padding-bottom: 10px;
 }
 
+/* Estilos de Tabela */
 table {
   width: 80%;
   border-collapse: collapse;
@@ -41,28 +43,25 @@ td {
   border: 1px solid #ddd;
   text-align: center;
   white-space: nowrap;
-  max-width: 300px;
-  /* Evita que o texto seja quebrado */
+  max-width: 300px; /* Evita que o texto seja quebrado */
 }
 
 th {
   background-color: #f2f2f2;
 }
 
+/* Estilos de Imagem */
 img {
-  width: 140px;
-  margin-top: 10px;
-  padding: 0;
-
+  width: 150px;
+  margin-top: 15px;
 }
 
-
-
+/* Estilos de Linha de Envio */
 .submit-line {
   align-items: center;
   position: relative;
   width: 200px;
-  margin: 20px 45%;
+  margin: 20px auto; /* Alterado para centralizar */
   border: solid 1px;
   border-radius: 10px;
 }
@@ -85,7 +84,7 @@ img {
   padding-left: 20px; /* Adicionando espaço à direita do input para o ícone */
 }
 
-
+/* Outros Estilos */
 td:nth-child(4).break-word {
   overflow-wrap: break-word;
   white-space: pre-line;
