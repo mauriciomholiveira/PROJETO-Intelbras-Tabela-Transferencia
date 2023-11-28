@@ -1,14 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: small;
 }
 
+
 .button {
   text-decoration: none;
   font-weight: 600;
   position: absolute;
-  top: 20px; /* ajuste a posição vertical conforme necessário */
-  right: 20px; /* ajuste a posição horizontal conforme necessário */
+  top: 20px;
+  /* ajuste a posição vertical conforme necessário */
+  right: 20px;
+  /* ajuste a posição horizontal conforme necessário */
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 0%);
   padding: 5px;
@@ -24,8 +33,10 @@ h1 {
   background-color: #04a94b;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3px;
+  margin-top: 3px;
   font-size: 36px;
+  height: 50px;
 }
 
 table {
@@ -56,16 +67,37 @@ th {
 }
 
 img {
-  width: 10vw;
+  width: 140px;
+  margin-top: 10px;
+  padding:0;
+  
 }
 
-.tfoot {
-  color: #ffffff;
+
+
+.submit-line {
+  align-items: center;
+  position: relative;
+  width: 200px;
+  margin: 10px 40%;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+.submit-line input {
+  width: 100%;
+  border-radius: 10px;
+  height: 25px;
+}
+
+.fa, fa-search {
+margin-right:15px;
+margin-bottom: 12px;
 }
 
 .submit-lente {
   position: absolute;
-  top: 0;
+  top: 6px;
   right: 0;
   z-index: 10;
   border: none;
@@ -73,15 +105,6 @@ img {
   outline: none;
 }
 
-.submit-line {
-  position: relative;
-  width: 200px;
-  margin: 20px 78%;
-}
-
-.submit-line input {
-  width: 100%;
-}
 td:nth-child(4).break-word {
   overflow-wrap: break-word;
   white-space: pre-line;
