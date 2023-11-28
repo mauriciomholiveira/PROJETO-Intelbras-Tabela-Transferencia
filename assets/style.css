@@ -11,7 +11,7 @@ body {
 }
 
 /* Estilos de Cabeçalho */
-h1 {
+.titulo {
   border: solid 2px;
   border-radius: 10px;
   background-color: #04a94b;
@@ -43,7 +43,8 @@ td {
   border: 1px solid #ddd;
   text-align: center;
   white-space: nowrap;
-  max-width: 300px; /* Evita que o texto seja quebrado */
+  max-width: 300px;
+  /* Evita que o texto seja quebrado */
 }
 
 th {
@@ -51,9 +52,16 @@ th {
 }
 
 /* Estilos de Imagem */
-img {
+.logo {
   width: 150px;
   margin-top: 15px;
+}
+
+.github img {
+  width: 90px;
+  margin-left: 84%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Estilos de Linha de Envio */
@@ -61,7 +69,8 @@ img {
   align-items: center;
   position: relative;
   width: 200px;
-  margin: 20px auto; /* Alterado para centralizar */
+  margin: 0px auto;
+  /* Alterado para centralizar */
   border: solid 1px;
   border-radius: 10px;
 }
@@ -74,14 +83,17 @@ img {
   border: none;
   background: transparent;
   outline: none;
-  margin-right: 10px; /* Ajustando o espaço à direita do ícone */
+  margin-right: 10px;
+  /* Ajustando o espaço à direita do ícone */
 }
 
 .submit-line input {
-  width: calc(100% - 20px); /* Ajustando a largura do input para acomodar o ícone */
+  width: calc(100% - 20px);
+  /* Ajustando a largura do input para acomodar o ícone */
   border-radius: 10px;
   height: 25px;
-  padding-left: 20px; /* Adicionando espaço à direita do input para o ícone */
+  padding-left: 20px;
+  /* Adicionando espaço à direita do input para o ícone */
 }
 
 /* Outros Estilos */
