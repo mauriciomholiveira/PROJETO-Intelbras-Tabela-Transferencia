@@ -14,34 +14,32 @@ A tabela segue a seguinte estrutura:
 ### 1. Segmento 📑
 Identificação do segmento relacionado ao produto ou serviço.
 
-### 2. Fila 📞
-Denominação da fila correspondente ao segmento no sistema de atendimento.
 
-### 3. URA 🔊
+### 2. URA 🔊
 Código correspondente à Unidade de Resposta Audível (URA) para redirecionamento eficiente dos clientes em contatos posteriores.
 
-### 4. Produto 📦
+### 3. Produto 📦
 Nome ou identificação do produto ou serviço Intelbras.
 
-### 5. Suporte 🛠️
+### 4. Suporte 🛠️
 Indica disponibilidade de suporte (Sim/Não).
 
-### 6. Qualificação ICC 📈
+### 5. Qualificação ICC 📈
 Informações específicas de qualificação no sistema ICC.
 
-### 7. Transferência CHAT 💬
+### 6. Transferência CHAT 💬
 Indicação de transferência para atendimento via chat.
 
 ## Exemplo da Tabela 📊
 
 ```markdown
 
-| Segmento  | Fila   | URA  | Produto      | Suporte | Qualificação ICC      | Transferência CHAT |
-|-----------|--------|------|--------------|---------|-----------------------|--------------------|
-| 0800      | 12001  | 493  | EWS 101 I    | Sim     | Encam. p/ Varejo Energia | Varejo Energia    |
-| 0800      | 12001  | 493  | EWS 201 E    | Sim     | Encam. p/ Varejo Energia | Varejo Energia    |
-| ALARMES   | 10401  | 454  | AMT 1004 RF  | Sim     | Encam. p/ Alarmes    | Segurança MG       |
-| ALARMES   | 10401  | 454  | AMT 1016 NET | Sim     | Encam. p/ Alarmes    | Segurança MG       |
+| Segmento  | URA  | Produto      | Suporte | Qualificação ICC      | Transferência CHAT |
+|-----------|------|--------------|---------|-----------------------|--------------------|
+| 0800      | 493  | EWS 101 I    | Sim     | Encam. p/ Varejo Energia | Varejo Energia    |
+| 0800      | 493  | EWS 201 E    | Sim     | Encam. p/ Varejo Energia | Varejo Energia    |
+| ALARMES   | 454  | AMT 1004 RF  | Sim     | Encam. p/ Alarmes    | Segurança MG       |
+| ALARMES   | 454  | AMT 1016 NET | Sim     | Encam. p/ Alarmes    | Segurança MG       |
 
 ```
 
