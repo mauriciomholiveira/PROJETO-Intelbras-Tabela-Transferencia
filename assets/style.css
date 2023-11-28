@@ -67,17 +67,6 @@ img {
   border-radius: 10px;
 }
 
-.submit-line input {
-  width: 100%;
-  border-radius: 10px;
-  height: 25px;
-}
-
-.fa, fa-search {
-  margin-right: 15px;
-  margin-bottom: 12px;
-}
-
 .submit-lente {
   position: absolute;
   top: 6px;
@@ -86,7 +75,16 @@ img {
   border: none;
   background: transparent;
   outline: none;
+  margin-right: 10px; /* Ajustando o espaço à direita do ícone */
 }
+
+.submit-line input {
+  width: calc(100% - 20px); /* Ajustando a largura do input para acomodar o ícone */
+  border-radius: 10px;
+  height: 25px;
+  padding-left: 20px; /* Adicionando espaço à direita do input para o ícone */
+}
+
 
 td:nth-child(4).break-word {
   overflow-wrap: break-word;
