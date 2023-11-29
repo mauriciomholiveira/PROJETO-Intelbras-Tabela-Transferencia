@@ -96,7 +96,7 @@ td:nth-child(4).break-word {
   white-space: pre-line;
 }
 
-tr:not(:first-of-type):hover {
+.tr:hover {
   background-color: #04a94b;
   color: #f1f1f1;
 }
