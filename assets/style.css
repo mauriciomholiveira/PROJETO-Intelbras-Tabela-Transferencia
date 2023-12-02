@@ -1,102 +1,90 @@
-/* Reset e Estilos Globais */
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
+ * {
+   margin: 0;
+   padding: 0;
+   border: none
+ }
 
-body {
-  font-family: Arial, sans-serif;
-  font-size: small;
-}
+ body {
+  margin-top: -2px;
+   font-family: Arial, sans-serif;
+   font-size: small
+ }
 
-/* Estilos de Cabeçalho */
-.titulo {
-  border: solid 2px;
-  border-radius: 10px;
-  background-color: #04a94b;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 6px;
-  font-size: 36px;
-  height: 50px;
-  padding-bottom: 10px;
-}
+ .titulo {
+   border: solid 2px;
+   border-radius: 10px;
+   background-color: #04a94b;
+   color: #ffffff;
+   text-align: center;
+   margin-bottom: 6px;
+   font-size: 36px;
+   height: 50px;
+   padding-bottom: 10px
+ }
 
-/* Estilos de Tabela */
-table {
-  width: 80%;
-  border-collapse: collapse;
-  margin: 20px auto;
-}
+ table {
+   width: 80%;
+   border-collapse: collapse;
+   margin: 20px auto
+ }
 
-thead {
-  font-weight: 800;
-  position: sticky;
-  top: 0;
-  background-color: #d3d3d3;
-}
+ thead {
+   font-weight: 800;
+   position: sticky;
+   top: 0;
+   background-color: #d3d3d3
+ }
 
-th,
-td {
-  padding: 5px;
-  border: 1px solid #ddd;
-  text-align: center;
-  white-space: nowrap;
-  max-width: 300px;
-  /* Evita que o texto seja quebrado */
-}
+ th, td {
+   padding: 5px;
+   border: 1px solid #ddd;
+   text-align: center;
+   white-space: nowrap;
+   max-width: 300px
+ }
 
-th {
-  background-color: #f2f2f2;
-}
+ th {
+   background-color: #f2f2f2
+ }
 
-/* Estilos de Imagem */
-.logo {
-  width: 150px;
-  margin-top: 15px;
-}
+ .logo {
+   width: 150px;
+   margin-top: 15px
+ }
 
+ .submit-line {
+   align-items: center;
+   position: relative;
+   width: 200px;
+   margin: 30px auto 10px auto;
+   border: solid 1px;
+   border-radius: 10px
+ }
 
-/* Estilos de Linha de Envio */
-.submit-line {
-  align-items: center;
-  position: relative;
-  width: 200px;
-  margin: 0px auto;
-  /* Alterado para centralizar */
-  border: solid 1px;
-  border-radius: 10px;
-}
+ .submit-lente {
+   position: absolute;
+   top: 6px;
+   right: 0;
+   z-index: 10;
+   border: none;
+   background: transparent;
+   outline: none;
+   margin-right: 10px
+ }
 
-.submit-lente {
-  position: absolute;
-  top: 6px;
-  right: 0;
-  z-index: 10;
-  border: none;
-  background: transparent;
-  outline: none;
-  margin-right: 10px;
-  /* Ajustando o espaço à direita do ícone */
-}
+ .submit-line input {
+   width: calc(100% - 20px);
+   border-radius: 10px;
+   height: 25px;
+   padding-left: 20px
+ }
 
-.submit-line input {
-  width: calc(100% - 20px);
-  /* Ajustando a largura do input para acomodar o ícone */
-  border-radius: 10px;
-  height: 25px;
-  padding-left: 20px;
-  /* Adicionando espaço à direita do input para o ícone */
-}
+ td:nth-child(4).break-word {
+   overflow-wrap: break-word;
+   white-space: pre-line
+ }
 
-/* Outros Estilos */
-td:nth-child(4).break-word {
-  overflow-wrap: break-word;
-  white-space: pre-line;
-}
-
-.tr:hover {
-  background-color: #04a94b;
-  color: #f1f1f1;
-}
+ .tr:hover {
+   background-color: #04a94b;
+   color: #f1f1f1
+ }
