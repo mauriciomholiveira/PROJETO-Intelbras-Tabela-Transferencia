@@ -1,13 +1,13 @@
  * {
    margin: 0;
    padding: 0;
-   border: none
+   border: none;
  }
 
  body {
-  margin-top: -2px;
+   margin-top: -2px;
    font-family: Arial, sans-serif;
-   font-size: small
+   font-size: small;
  }
 
  .titulo {
@@ -19,20 +19,20 @@
    margin-bottom: 6px;
    font-size: 36px;
    height: 50px;
-   padding-bottom: 10px
+   padding-bottom: 10px;
  }
 
  table {
    width: 80%;
    border-collapse: collapse;
-   margin: 20px auto
+   margin: 20px auto;
  }
 
  thead {
    font-weight: 800;
    position: sticky;
    top: 0;
-   background-color: #d3d3d3
+   background-color: #d3d3d3;
  }
 
  th, td {
@@ -40,7 +40,7 @@
    border: 1px solid #ddd;
    text-align: center;
    white-space: nowrap;
-   max-width: 300px
+   max-width: 300px;
  }
 
  th {
@@ -49,7 +49,7 @@
 
  .logo {
    width: 150px;
-   margin-top: 15px
+   margin-top: 15px;
  }
 
  .submit-line {
@@ -58,7 +58,7 @@
    width: 200px;
    margin: 30px auto 10px auto;
    border: solid 1px;
-   border-radius: 10px
+   border-radius: 10px;
  }
 
  .submit-lente {
@@ -69,22 +69,22 @@
    border: none;
    background: transparent;
    outline: none;
-   margin-right: 10px
+   margin-right: 10px;
  }
 
  .submit-line input {
    width: calc(100% - 20px);
    border-radius: 10px;
    height: 25px;
-   padding-left: 20px
+   padding-left: 20px;
  }
 
  td:nth-child(4).break-word {
    overflow-wrap: break-word;
-   white-space: pre-line
+   white-space: pre-line;
  }
 
  .tr:hover {
    background-color: #04a94b;
-   color: #f1f1f1
+   color: #f1f1f1;
  }
